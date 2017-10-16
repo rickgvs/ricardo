@@ -1,0 +1,17 @@
+div {
+  height:100px;
+  width:320px;
+  float:left;
+  margin: 4px 10px 4px 10px;
+  font-size: 11px;
+}
+table {
+  margin-top: 10px;
+  width:100%;
+}
+.live {
+  border:1px solid red;
+}
+.notLive {
+  border:1px solid black;
+}

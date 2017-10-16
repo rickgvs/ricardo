@@ -1,0 +1,25 @@
+<div [ngClass]="{'live': (game && game.gameState && game.gameState === 'live'), 'notLive' : (game && game.gameState && game.gameState !== 'live')}">
+  <table>
+    <tr>
+      <td colspan="2">EVENT NAME</td>
+      <td>{{game?.startTime}}</td>
+      <td>{{game?.network}}</td>
+      <td>&nbsp;</td>
+      <td>{{game?.gameState}}</td>
+    </tr>
+    <tr>
+      <td colspan="2"><img src="assets/home.png"></td>
+      <td>{{game?.home?.score}}</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2"><img src="assets/away.png"></td>
+      <td>{{game?.away?.score}}</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
